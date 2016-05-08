@@ -79,9 +79,10 @@ module.exports = {
         tools.error("medicare must be a boolean: 0 or 1", res)
       }
       var medicare = req.medicare
+      if(medicare==0){medicare=false}else{medicare=true}
     }
     else {
-      var medicare = 0
+      var medicare = false
     }
 
     tax.calc(req, res, medicare)

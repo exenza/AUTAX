@@ -1,4 +1,4 @@
-AUTAX README
+AUTAX README v.0.0.1
 
 The application accept only POST requests at /payee to calculate Australian Taxation.
 This code has been written as an excercise and should be used for educational purposes only.
@@ -13,7 +13,7 @@ MANDATORY
 - amount [Integer]
 - pension [Integer (0 to 50)]
 OPTIONAL
-- medicare [Boolean (0/1), Default: 0)]
+- medicare [Integer (0/1), Default: 0)]
 
 If mandatory parameters are missing or parameters have incorrect values an error object will be returned.
 Error objet will be returned as follow:
@@ -32,7 +32,7 @@ If request is successful the following JSON object will be returned:
     "incomeTax":[Integer]
     "pension":[String],
     "pensionAmount":[Integer],
-    "medicare":[Boolean (0/1)],
+    "medicare":[Boolean],
     "medicareAmount":[Integer],
     "medicareCredit":[Integer],
     "taxBand":[Integer (0 to 4)]

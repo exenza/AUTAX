@@ -53,7 +53,6 @@ module.exports = {
             //Substracting any medicare due
         netAmount -= medicareAmount - medicareCredit
         var pensionAmount = tools.roundCents((grossAmount * (pension / 100)).toFixed(2))
-
         payslip.newPayslip(req, res, amount, grossAmount, netAmount, incomeTax, pension, pensionAmount, medicare, medicareAmount, medicareCredit, taxBand)
     }
 }
