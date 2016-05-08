@@ -4,7 +4,7 @@ The application accept only POST requests at /payee to calculate Australian Taxa
 This code has been written as an excercise and should be used for educational purposes only.
 
 To demo the applicaion a simple frontend example is served at /:
-httpp://autax.herokuapp.com
+http://autax.herokuapp.com
 
 It's possible as well to test the app using bash script:
 /utilities/remote_test.sh
