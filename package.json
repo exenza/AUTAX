@@ -1,0 +1,13 @@
+{
+  "name": "AUTAX",
+  "version": "0.0.1",
+  "description": "Australian tax calculator",
+  "main": "server.js",
+  "repository": "",
+  "author": "Massimo Berta <massimo.berta@gmail.com>",
+  "dependencies": {
+    "express": "~3.2.4",
+    "fs": "0.0.2",
+    "method-override": "^2.3.5"
+  }
+}
