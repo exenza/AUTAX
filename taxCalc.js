@@ -13,8 +13,10 @@ module.exports = {
         if (medicare) {
             medicareAmount = tools.roundCents(amount * 0.2)
         }
-        if (medicare && amount - medicareAmount < 18200 && amount > 18200) {
-            medicareCredit = 18200 - (amount - medicareAmount)
+        if (medicare && amount - medicareAmount < 18200) {
+            var baseAmount=18200
+            if(amount<18200){baseAmount=amount}
+            medicareCredit = baseAmount-(amount-medicareAmount)
         }
         medicareAmount = tools.roundCents(medicareAmount / 12)
         medicareCredit = tools.roundCents(medicareCredit / 12)
