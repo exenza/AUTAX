@@ -1,12 +1,12 @@
 clear
-read -p "Host [ENTER=https://autax-exenza.c9users.io] :" host
+read -p "Host [ENTER=autax.herokuapp.com] :" host
 clear
-host=${host:-"https://autax-exenza.c9users.io"}
+host=${host:-"autax.herokuapp.com"}
 echo "Host set to '$host'"
 echo
-read -p "PORT [ENTER=443] :" port
+read -p "PORT [ENTER=80] :" port
 clear
-port=${port:-443}
+port=${port:-80}
 echo "Porst set to '$port'"
 echo
 read -p "First Name [ENTER=John] :" firstName
